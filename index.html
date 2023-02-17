@@ -27,7 +27,9 @@
 <body>
 	<div id="app">
 		<button class="btn btn-dark" @click="getEmails()">Generate emails</button>
-		<span class="d-block" v-for="(email, index) in emails">{{index + 1}}: {{email}}</span>
+		<ol>
+			<li v-for="(email, index) in emails">{{email}}</li>
+		</ol>
 	</div>
 </body>
 
